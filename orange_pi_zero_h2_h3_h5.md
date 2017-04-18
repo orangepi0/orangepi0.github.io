@@ -1,11 +1,13 @@
 ## Orange Pi Zero + Orange Pi Zero Plus 2 - H3 & H5 - downloads
 
-## downloaded from
-http://www.orangepi.org/downloadresources
+* downloaded from: http://www.orangepi.org/downloadresources/
+* Files check sums:  https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/md5sum.list
 
-Files check sums https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/md5sum.list
+---
 
 ## Orange Pi Zero Plus 2 - H5 (NEW)
+
+---
 
 ### Debian_Jessie_For_OrangePiZeroPlus2H5
 
@@ -20,6 +22,8 @@ Release date： 2017-03-30
 Release notes： user(root), password(orangepi)
 ```    
 
+---
+
 ### Arch_Linux_For_OrangePiZeroPlus2H5
 
 * FILE: https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/arch_linux_zeroplus2_H5_V0_2.img.xz
@@ -30,6 +34,8 @@ Release notes： user(root), password(orangepi)
 Release date： 2017-03-30
 Release notes： user(root), password(orangepi)
 ```
+
+---
 
 ### Ubuntu_Xenial_For_OrangePiZeroPlus2H5
 
@@ -42,6 +48,8 @@ Release notes： user(root), password(orangepi)
 Release date： 2017-03-30
 Release notes： user(root), password(orangepi)
 ```
+
+---
 
 ### Android For Orange Pi Zero Plus2 H5
 
@@ -58,7 +66,12 @@ http://www.orangepi.org/Docs/SDcardinstallation.html#Install_Android_OS_image
     Release notes:
 ```
 
+---
+
 ## Orange Pi Zero Plus 2 - H3 (NEW)
+
+---
+
 ### Debian_Desktop_Jessie_For_OrangePiZeroPlus2H3
 
 <img align="right" src="pics/Orange-Pi-Zero-Plus-2-H3.jpg"/>
@@ -72,6 +85,8 @@ Release date： 2017-03-30
 Release notes： user(root), password(orangepi)
 ```
 
+---
+
 ### Debian_Desktop_Xenial_For_OrangePiZeroPlus2H3
 
 * FILE: https://github.com/orangepi0/orangepi0.github.io/releases/download/orange_pi_zero_h3_h5/Debian_Desktop_Xenial_For_OrangePiZeroPlus2H3_V0_9_1.img.xz
@@ -83,6 +98,8 @@ Release date： 2017-03-30
 Release notes： user(root), password(orangepi)
 ```
 
+---
+
 ### Ubuntu_Server_Xenial_For_OrangePiZeroPlus2H3
 
 * FILE: https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/ubuntu_server_xenial_zeroplus2_H3_V0_1.img.xz
@@ -93,6 +110,8 @@ Release notes： user(root), password(orangepi)
 Release date： 	2017-03-30
 Release notes： 	user(root), password(orangepi)
 ```
+
+---
 
 ### Android For Orange Pi Zero Plus2 H3
 
@@ -116,7 +135,11 @@ Release date：      2017-03-30
 Release notes:	
 ```
 
+---
+
 ## Orange Pi Zero H2+ 
+
+---
 
 ### Debian server Orange Pi Zero
 
@@ -131,6 +154,8 @@ Release date： 2016-12-01
 Release notes： user(root), password(orangepi)
 ```
 
+---
+
 ### debian desktop OrangePizero v0_8_2
 
 * FILE: https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/debian_desktop_For_OrangePizero_v0_8_2.img.xz
@@ -142,6 +167,8 @@ Release date： 2016-12-05
 Release notes： user(root), password(orangepi)
 ```
 
+---
+
 ### ubuntu_server_For_OrangePi_Zero
 
 * FILE: https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/ubuntu_server_1604_For_OrangePi-zero_v0_8_1.img.xz
@@ -152,6 +179,8 @@ Release notes： user(root), password(orangepi)
 Release date: :  2016-11-24
 Release notesusername(root/orangepi), password(orangepi)
 ```
+
+---
 
 ### Android For Orange Pi Zero
 
@@ -174,6 +203,8 @@ http://www.orangepi.org/Docs/SDcardinstallation.html#Install_Android_OS_image
     Release date：      2016-11-24
     Release notes：      
 ```
+
+---
 
 ## List
 

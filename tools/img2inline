@@ -18,7 +18,7 @@ our $print_file_name = $ENV{noname};
 our $html_img = $ENV{nohtml};
     $html_img //= 0;
 
-warn "nohtml: $html_img noname: $print_file_name\n";
+#warn "nohtml: $html_img noname: $print_file_name\n";
 
 while ( $_ = shift ) {
 

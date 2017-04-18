@@ -1,0 +1,42 @@
+#!/usr/bin/perl
+
+## hyphop ##
+
+use Text::Markdown qw(markdown);
+
+our $m = Text::Markdown->new;
+
+our $in = shift or "<&STDIN";
+our $out = shift or ">&STDOUT";
+
+sub cat {
+    `cat @_`
+}
+
+sub savefile {
+    my $f;
+    my $r = open $f, ">$_[1]";
+    return undef unless $r;
+    my $l = length $_[0];
+    $r = syswrite $f, $_[0], $l;
+    warn "[i] save $_[1] $l bytes\n";
+    return $r;
+}
+
+$_ = cat $in;
+
+s{\b(http(s?)://\S+/(\S+\.(rar|xz|list)))\b}{[$3]($1)}sgi;
+s{(?<!\()(http(s?)://\S+)}{[$1]($1)}sgi;
+
+#warn $_;
+
+$_ = $m->markdown($_);
+
+$_ = cat('.html.header')
+. $_ .
+cat('.html.footer');
+
+$_ =~ s{%%(\w+)%%}{$ENV{$1}}sgi;
+
+savefile $_ => $out;
+
