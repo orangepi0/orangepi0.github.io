@@ -1,0 +1,135 @@
+#!/usr/bin/perl
+
+## hyphop ##
+
+BEGIN {
+    our $f = __FILE__;
+    __FILE__ =~ /\/?([^\/]+)$/;
+    our $CWD = $`;
+    unshift @INC, $CWD;
+}
+
+#use utils;
+
+#open STDERR, ">/dev/null";
+
+our $print_file_name = $ENV{noname};
+    $print_file_name ||= 0;
+our $html_img = $ENV{nohtml};
+    $html_img ||= 0;
+
+while ( $_ = shift ) {
+
+    print "<!-- $_ -->\n" if $print_file_name;
+    print "<img alt='$_' src='" if $html_img;
+    print utils::file_inline($_);
+    print "'/>" if $html_img;
+
+}
+
+package utils;
+
+## hyphop ##
+
+#use mime;
+use MIME::Base64;
+
+sub read_to {
+    my $s = -s $_[0];
+    return undef unless $s;
+    my $r = open my $f, "$_[0]";
+    binmode $f, $_[3] if defined $_[3];
+    $r = sysread $f, ${ $_[1] }, $s;
+    warn "read_to $r bytes to $_[0] err:$!\n";
+    close $f;
+    return $r
+}
+
+sub file_name {
+    return $' if  $_[0] =~ /(.+\/)/;
+    $_[0];
+}
+
+sub file_inline { 
+    my $file = $_[0];
+    my $mime_type = mime::get_mime_file($file);
+    #warn "$mime_type - $file";
+    my $data;
+    read_to $file => \$data;
+    my $base64_data = MIME::Base64::encode_base64 $data, '';
+    "data:$mime_type;base64,$base64_data"
+}
+
+
+package mime;
+
+## hyphop
+
+#use common::sense;
+BEGIN {
+    our $def_mime = '<&DATA';
+    our %loaded;
+    our %ext;
+}
+
+sub import {
+    my $pkg = caller;
+    my $p  = shift;
+    my $mime_file = shift || $def_mime;
+    *{ $pkg . '::get_mime' } = \&get_mime;
+    warn "[i] import $pkg $mime_file";
+    load_mime($mime_file) 
+}
+
+sub load_mime {
+
+    my $mime_file = $_[0];
+    return if $loaded{$mime_file};
+    $loaded{$mime_file} = time();
+
+    my $f;
+    my $s = open $f, $mime_file;
+    while ( my $l = <$f> ) {
+        next if $l =~ /^\s*\#/;
+        next unless $l =~ /(\S+)\s+(.+)\;?/;
+#       warn "[i] $l\n";
+        my $m = $1;
+        my @l = split /\s+/, $2;
+#        while ( my $m = shift @l ) {
+            while ( my $e = lc shift @l ) {
+#                warn "[i] mime $e $m";
+                $ext{ $e } = $m;
+            }
+#            last;
+#        }
+    }
+    close $f;
+
+    my $mimes = scalar keys %ext;
+    
+#    warn "[i] load $mimes mime from $mime_file";
+
+    #    text/html                             html htm shtml;
+    #    text/css                              css;
+    #    text/xml                              xml;
+
+}
+
+sub get_mime {
+    __PACKAGE__->import unless scalar keys %loaded;
+    $ext{ lc $_[0] };
+}
+
+sub get_mime_file {
+    $_[0] =~ /(.+)\./;
+    get_mime($');
+}
+
+
+__DATA__
+image/gif                             gif
+image/jpeg                            jpeg jpg
+image/png                             png
+image/x-icon                          ico
+image/svg+xml                         svg svgz
+plain/text			      txt
