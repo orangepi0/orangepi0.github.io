@@ -178,6 +178,7 @@ http://www.orangepi.org/Docs/SDcardinstallation.html#Install_Android_OS_image
 ## Links
 
 * https://github.com/orangepi0/downloads/releases/tag/orange_pi_zero
+* https://orangepi0.github.io/#downloads
 
 <!--
 ###
