@@ -76,7 +76,7 @@ http://www.orangepi.org/Docs/SDcardinstallation.html#Install_Android_OS_image
 
 <img align="right" src="pics/Orange-Pi-Zero-Plus-2-H3.jpg"/>
 
-* FILE: 
+* FILE: debian_desktop_jessie_zeroplus2_H3_V0_1.img.xz
 * PAGE: http://www.orangepi.org/downloadresources/orangepizeroplus2H3/2017-03-30/orangepizeroplus2H3_d7002ea6d32902a4.html
 * FROM: https://pan.baidu.com/s/1b0sVnw
 
@@ -89,7 +89,7 @@ Release notes： user(root), password(orangepi)
 
 ### Debian_Desktop_Xenial_For_OrangePiZeroPlus2H3
 
-* FILE: https://github.com/orangepi0/orangepi0.github.io/releases/download/orange_pi_zero_h3_h5/Debian_Desktop_Xenial_For_OrangePiZeroPlus2H3_V0_9_1.img.xz
+* FILE: https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/debian_desktop_jessie_zeroplus2_H3_V0_1.img.xz
 * PAGE: http://www.orangepi.org/downloadresources/orangepizeroplus2H3/2017-03-30/orangepizeroplus2H3_1e5f476831686b19.html
 * FROM: https://pan.baidu.com/s/1slrXdjJ
 
