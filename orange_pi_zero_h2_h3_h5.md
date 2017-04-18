@@ -109,6 +109,8 @@ To get the PhoenixCard software, try any of these links. After installation and 
 
 Here are the instructions for the TF Card setup – read them carefully and follow them exactly. Refer to this webpage
 
+http://www.orangepi.org/Docs/SDcardinstallation.html#Install_Android_OS_image
+
 ```Version：           0.8.0
 Release date：      2017-03-30
 Release notes:	
@@ -172,6 +174,10 @@ http://www.orangepi.org/Docs/SDcardinstallation.html#Install_Android_OS_image
     Release date：      2016-11-24
     Release notes：      
 ```
+
+## Links
+
+* https://github.com/orangepi0/downloads/releases/tag/orange_pi_zero
 
 <!--
 ###
