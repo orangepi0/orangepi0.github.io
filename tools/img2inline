@@ -14,9 +14,11 @@ BEGIN {
 #open STDERR, ">/dev/null";
 
 our $print_file_name = $ENV{noname};
-    $print_file_name ||= 0;
+    $print_file_name //= 0;
 our $html_img = $ENV{nohtml};
-    $html_img ||= 0;
+    $html_img //= 0;
+
+warn "nohtml: $html_img noname: $print_file_name\n";
 
 while ( $_ = shift ) {
 
