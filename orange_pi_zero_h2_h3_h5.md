@@ -1,7 +1,9 @@
 ## Orange Pi Zero + Orange Pi Zero Plus 2 - H3 & H5 - downloads
 
 * downloaded from: http://www.orangepi.org/downloadresources/
-* Files check sums:  https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/md5sum.list
+* files checksums:  https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/md5sum.list
+* files list:  https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/files.list
+* download list:  https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/downloads.list
 
 ---
 
@@ -228,7 +230,12 @@ http://www.orangepi.org/Docs/SDcardinstallation.html#Install_Android_OS_image
 * https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/debian_server_For_OrangePizero_v0_9_2.img.xz
 * https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/sun8iw7p1_android_dolphin-p2_uart0.rar
 * https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/ubuntu_server_1604_For_OrangePi-zero_v0_8_1.img.xz
+
+### Add
+
 * https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/md5sum.list
+* https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/files.list
+* https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/downloads.list
 
 ## Links
 
