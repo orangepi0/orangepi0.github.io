@@ -261,5 +261,5 @@ write
 ## Links
 
 * https://github.com/orangepi0/downloads/releases/tag/orange_pi_zero
-* https://orangepi0.github.io/#downloads
+* https://orangepi0.github.io/#list
 * http://www.orangepi.org/downloadresources
