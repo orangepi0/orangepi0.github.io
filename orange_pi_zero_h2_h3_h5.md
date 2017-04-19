@@ -209,7 +209,7 @@ http://www.orangepi.org/Docs/SDcardinstallation.html#Install_Android_OS_image
 
 ---
 
-## Lists
+## Downloads
 
 ### Orange Pi Zero Plus 2 - H5
 
@@ -238,7 +238,7 @@ http://www.orangepi.org/Docs/SDcardinstallation.html#Install_Android_OS_image
 * https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/files.list
 * https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/downloads.list
 
-### How to get & write image to sd card
+## How to get & write image to sd card
 
 get
 
@@ -261,5 +261,5 @@ write
 ## Links
 
 * https://github.com/orangepi0/downloads/releases/tag/orange_pi_zero
-* https://orangepi0.github.io/#list
+* https://orangepi0.github.io/#downloads
 * http://www.orangepi.org/downloadresources
