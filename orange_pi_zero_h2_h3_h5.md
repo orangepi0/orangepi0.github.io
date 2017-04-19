@@ -2,9 +2,10 @@
 
 * downloaded from: http://www.orangepi.org/downloadresources/
 * files checksums:  https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/md5sum.list
-* files list:  https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/files.list
-* download list:  https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/downloads.list
-
+| https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/files.list
+| https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/downloads.list
+* How to: [get & write image to sd card](#how_to_get_write_image_to_sd_card)
+    
 ---
 
 ## Orange Pi Zero Plus 2 - H5 (NEW)
@@ -208,7 +209,7 @@ http://www.orangepi.org/Docs/SDcardinstallation.html#Install_Android_OS_image
 
 ---
 
-## List
+## Lists
 
 ### Orange Pi Zero Plus 2 - H5
 
@@ -237,17 +238,28 @@ http://www.orangepi.org/Docs/SDcardinstallation.html#Install_Android_OS_image
 * https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/files.list
 * https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/downloads.list
 
+### How to get & write image to sd card
+
+get
+
+    cd /tmp
+    src=https://github.com/orangepi0/downloads/releases/download/orange_pi_zero
+    img=ANY_IMAGE_FILE_FROM_THERE.img.xz
+    img=debian_jessie_zeroplus2_H5_V0_2.img.xz
+    wget -c $src/$img
+
+check
+
+    wget -c $src/md5sum.list
+    grep $img md5sum.list | md5sum -c
+
+write 
+
+    xz -dc $img | dd bs=40960 of=/dev/mmcblk0
+    sync
+
 ## Links
 
 * https://github.com/orangepi0/downloads/releases/tag/orange_pi_zero
 * https://orangepi0.github.io/#downloads
 * http://www.orangepi.org/downloadresources
-
-<!--
-###
-
-* PAGE:
-* FILE:
-* DL:  
-
--->
