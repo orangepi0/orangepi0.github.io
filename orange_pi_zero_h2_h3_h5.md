@@ -4,7 +4,7 @@
 * files checksums:  https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/md5sum.list
 | https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/files.list
 | https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/downloads.list
-* How to: [get & write image to sd card](#how_to_get_write_image_to_sd_card)
+* How to: [get check & write image to sd card](#how_to_get_check_write_image_to_sd_card)
     
 ---
 
@@ -238,7 +238,7 @@ http://www.orangepi.org/Docs/SDcardinstallation.html#Install_Android_OS_image
 * https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/files.list
 * https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/downloads.list
 
-## How to get & write image to sd card
+## How to get check & write image to sd card
 
 get
 
