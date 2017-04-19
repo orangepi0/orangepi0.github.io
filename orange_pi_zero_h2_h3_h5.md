@@ -87,9 +87,9 @@ Release notes： user(root), password(orangepi)
 
 ---
 
-### Debian_Desktop_Xenial_For_OrangePiZeroPlus2H3
+### Dubuntu_Desktop_Xenial_For_OrangePiZeroPlus2H3
 
-* FILE: 
+* FILE: https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/ubuntu_desktop_xenial_zeroplus2_H3_V0_1.img.xz
 * PAGE: http://www.orangepi.org/downloadresources/orangepizeroplus2H3/2017-03-30/orangepizeroplus2H3_1e5f476831686b19.html
 * FROM: https://pan.baidu.com/s/1slrXdjJ
 
@@ -218,6 +218,7 @@ http://www.orangepi.org/Docs/SDcardinstallation.html#Install_Android_OS_image
 ### Orange Pi Zero Plus 2 - H3
 
 * https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/debian_desktop_jessie_zeroplus2_h3_V0_1.img.xz
+* https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/ubuntu_desktop_xenial_zeroplus2_H3_V0_1.img.xz
 * https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/android_zeroplus2_H3_V0_1.img.rar
 * https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/ubuntu_server_xenial_zeroplus2_H3_V0_1.img.xz
 
