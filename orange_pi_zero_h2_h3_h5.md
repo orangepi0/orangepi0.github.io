@@ -1,7 +1,7 @@
 ## Orange Pi Zero + Orange Pi Zero Plus 2 - H3 & H5 - download mirror
 
 * [orange pi zero h2](#orange_pi_zero_h2) 
-| [orange pi zero plus2 h3](#orange_pi_zero_plus_2_h5_new) 
+| [orange pi zero plus2 h3](#orange_pi_zero_plus_2_h3_new) 
 | [orange pi zero plus2 h5](#orange_pi_zero_plus_2_h5_new)
 * downloaded from: http://www.orangepi.org/downloadresources/
 * files checksums:  https://github.com/orangepi0/downloads/releases/download/orange_pi_zero/md5sum.list
