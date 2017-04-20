@@ -25,8 +25,28 @@ sub savefile {
 
 $_ = cat $in;
 
-s{\b(http(s?)://\S+/(\S+\.(rar|xz|list)))\b}{[$3]($1)}sgi;
-s{(?<!\()(http(s?)://\S+)}{[$1]($1)}sgi;
+s{\b(http(s?)://\S+/(\S+\.(rar|xz|list)))}{[$3]($1)}sgi;
+s{(?<=\s)(http(s?)://\S+)}{[$1]($1)}sgi;
+#s{(?<!\()(http(s?)://\S+)}{[$1]($1)}sgi;
+
+our %names;
+
+sub getnamelink{
+    my $name = lc $_[0];
+    $name =~ s/\W/_/sg;
+    $name =~ s/_+/_/sg;
+    $name =~ s/_$//sg;
+    my $n = $name;
+    my $i=1;
+    while ( $names{$name} ) {
+	$name = $n . '_'. $i++;
+    }
+    $names{$name} = 1;
+    warn "[NAME] $name\n";
+    "<a name='$name'></a>"
+}
+
+s{(\#{2,5}\s+)([^\n]+)}{$1 . getnamelink($2) . $2 }esgi;
 
 #warn $_;
 
